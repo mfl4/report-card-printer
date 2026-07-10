@@ -1,9 +1,6 @@
 # report-card-printer
 
-A lightweight Python utility that demonstrates how student report card data is
-stored and validated. It showcases the core Python data types used to represent
-a student's record — name, enrollment status, age, and score — and how to
-inspect and verify each value's type at runtime.
+A lightweight Python utility that demonstrates how student report card data is stored and validated. It showcases the core Python data types used to represent a student's record, including name, enrollment status, age, and score. And how to inspect and verify each value's type at runtime.
 
 ## Contents
 

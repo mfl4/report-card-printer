@@ -1,10 +1,6 @@
 # report-card-printer
 
-Utilitas Python ringan yang mendemonstrasikan cara data kartu laporan (rapor)
-siswa disimpan dan divalidasi. Proyek ini menampilkan tipe data inti Python yang
-digunakan untuk merepresentasikan catatan seorang siswa — nama, status
-keterdaftaran, usia, dan nilai — serta cara memeriksa dan memverifikasi tipe
-dari setiap nilai saat program berjalan.
+Utilitas Python ringan yang mendemonstrasikan cara data kartu laporan (rapor) siswa disimpan dan divalidasi. Proyek ini menampilkan tipe data inti Python yang digunakan untuk merepresentasikan catatan seorang siswa, antara lain, nama, status keterdaftaran, usia, dan nilai. Serta cara memeriksa dan memverifikasi tipe dari setiap nilai saat program berjalan.
 
 ## Isi Folder
 
