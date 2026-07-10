@@ -1,14 +1,16 @@
 # report-card-printer
 
-Sebuah proyek workshop Python kecil dari kursus **Dasar-Dasar Python**. Folder
-ini berisi latihan praktis yang memperkenalkan konsep dasar Python: variabel
-dan tipe data.
+Utilitas Python ringan yang mendemonstrasikan cara data kartu laporan (rapor)
+siswa disimpan dan divalidasi. Proyek ini menampilkan tipe data inti Python yang
+digunakan untuk merepresentasikan catatan seorang siswa — nama, status
+keterdaftaran, usia, dan nilai — serta cara memeriksa dan memverifikasi tipe
+dari setiap nilai saat program berjalan.
 
 ## Isi Folder
 
 | Berkas          | Keterangan                                                       |
 | --------------- | ----------------------------------------------------------------- |
-| `main.py`       | Program contoh yang mendemonstrasikan variabel dan tipenya.       |
+| `main.py`       | Program yang mendefinisikan field rapor dan mencetak tipenya.     |
 | `LICENSE`       | Dedikasi domain publik CC0 1.0 Universal.                        |
 | `.gitignore`    | Aturan abaikan standar Python untuk version control.             |
 
@@ -21,11 +23,12 @@ dan tipe data.
    python main.py
    ```
 
-## Apa yang Dilakukan `main.py`
+## Cara Kerja
 
-Skrip ini menunjukkan cara menyimpan nilai ke dalam variabel dan memeriksa
-tipe datanya menggunakan fungsi bawaan `type()` serta pemeriksaan
-`isinstance()`.
+Skrip ini mendefinisikan field-field pada kartu rapor, lalu mencetak setiap nilai
+beserta tipe datanya menggunakan fungsi bawaan `type()`. Program juga menggunakan
+`isinstance()` untuk memverifikasi bahwa sebuah nilai termasuk tipe yang
+diharapkan.
 
 ```python
 name = 'Alice'
@@ -42,13 +45,13 @@ print(isinstance(score, float))
 print(score, type(score))
 ```
 
-- `name` adalah **string** (`str`) yang menyimpan teks `'Alice'`.
-- `is_student` adalah **boolean** (`bool`) yang menyimpan nilai `True`.
+- `name` adalah **string** (`str`) yang menyimpan nama siswa `'Alice'`.
+- `is_student` adalah **boolean** (`bool`) yang menandai status keterdaftaran (`True`).
 - `age` adalah **integer** (`int`) yang menyimpan nilai `20`.
 - `score` adalah **float** (`float`) yang menyimpan nilai `80.5`; `isinstance(score, float)`
   memastikan bahwa `score` termasuk tipe `float`.
 
-Menjalankan program akan mencetak setiap nilai beserta tipenya:
+## Output yang Diharapkan
 
 ```
 Alice <class 'str'>
@@ -58,11 +61,11 @@ True
 80.5 <class 'float'>
 ```
 
-## Tujuan Pembelajaran
+## Konsep Utama
 
-- Mendeklarasikan variabel dan memberikan nilai.
-- Mengenali tipe data `str`, `bool`, `int`, dan `float`.
-- Menggunakan `print()` dan `type()` untuk mengeksplorasi nilai.
+- Menyimpan field rapor ke dalam variabel dan memberikan nilai yang sesuai.
+- Merepresentasikan data dengan tipe `str`, `bool`, `int`, dan `float`.
+- Menggunakan `print()` dan `type()` untuk memeriksa nilai.
 - Menggunakan `isinstance()` untuk memeriksa apakah suatu nilai termasuk tipe tertentu.
 
 ## Lisensi

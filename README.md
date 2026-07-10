@@ -1,14 +1,15 @@
 # report-card-printer
 
-A small Python workshop project from the **Python Basics** course. This folder
-contains a hands-on exercise that introduces fundamental Python concepts:
-variables and data types.
+A lightweight Python utility that demonstrates how student report card data is
+stored and validated. It showcases the core Python data types used to represent
+a student's record — name, enrollment status, age, and score — and how to
+inspect and verify each value's type at runtime.
 
 ## Contents
 
 | File           | Description                                                        |
 | -------------- | ------------------------------------------------------------------ |
-| `main.py`      | The sample program that demonstrates variables and their types.    |
+| `main.py`      | The program that defines report card fields and prints their types.|
 | `LICENSE`      | CC0 1.0 Universal public domain dedication.                        |
 | `.gitignore`   | Standard Python ignore rules for version control.                 |
 
@@ -21,10 +22,11 @@ variables and data types.
    python main.py
    ```
 
-## What `main.py` does
+## How it works
 
-The script shows how to store values in variables and inspect their data type
-using the built-in `type()` function and the `isinstance()` check.
+The script defines the fields of a report card, then prints each value alongside
+its data type using the built-in `type()` function. It also uses `isinstance()`
+to verify that a value belongs to an expected type.
 
 ```python
 name = 'Alice'
@@ -41,13 +43,13 @@ print(isinstance(score, float))
 print(score, type(score))
 ```
 
-- `name` is a **string** (`str`) holding the text `'Alice'`.
-- `is_student` is a **boolean** (`bool`) holding the value `True`.
+- `name` is a **string** (`str`) holding the student's name `'Alice'`.
+- `is_student` is a **boolean** (`bool`) indicating enrollment status (`True`).
 - `age` is an **integer** (`int`) holding the value `20`.
 - `score` is a **float** (`float`) holding the value `80.5`; `isinstance(score, float)`
   confirms that `score` belongs to the `float` type.
 
-Running the program prints each value together with its type:
+## Expected output
 
 ```
 Alice <class 'str'>
@@ -57,11 +59,11 @@ True
 80.5 <class 'float'>
 ```
 
-## Learning goals
+## Key concepts
 
-- Declare variables and assign values.
-- Recognize the `str`, `bool`, `int`, and `float` data types.
-- Use `print()` and `type()` to explore values.
+- Store report card fields in variables and assign appropriate values.
+- Represent data with the `str`, `bool`, `int`, and `float` types.
+- Use `print()` and `type()` to inspect values.
 - Use `isinstance()` to check whether a value belongs to a given type.
 
 ## License
